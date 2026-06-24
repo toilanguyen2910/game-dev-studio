@@ -261,8 +261,8 @@ MIT — see `LICENSE` for details.
 ## Contact Me
 
 - **Gmail**: [jack.vhknguyen@gmail.com](mailto:jack.vhknguyen@gmail.com)
-- **Facebook**: [Jack Nguyen](https://www.facebook.com/sourrrkngyn7/)
-- **Instagram**: [Jack Nguyen](https://www.instagram.com/sourrrr_kngyn/)
+- **Facebook**: [Vu Hoang Khoi Nguyen](https://www.facebook.com/sourrrkngyn7/)
+- **Instagram**: [sourrrr_kngyn](https://www.instagram.com/sourrrr_kngyn/)
 
 ---
 
