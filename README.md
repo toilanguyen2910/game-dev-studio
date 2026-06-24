@@ -49,7 +49,7 @@ Detailed setup instructions → [docs/multi-platform.md](docs/multi-platform.md)
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/game-dev-studio.git
+git clone https://github.com/toilanguyen2910/game-dev-studio.git
 cd game-dev-studio
 
 # Install platform-specific configs (choose your platform)
@@ -262,7 +262,7 @@ MIT — see `LICENSE` for details.
 
 - **Discord**: [discord.gg/gamedevstudio](https://discord.gg/gamedevstudio)
 - **Twitter/X**: [@GameDevStudio](https://twitter.com/gamedevstudio)
-- **Issues**: [GitHub Issues](https://github.com/your-org/game-dev-studio/issues)
+- **Issues**: [GitHub Issues](https://github.com/toilanguyen2910/game-dev-studio/issues)
 
 ---
 
@@ -282,7 +282,7 @@ MIT — see `LICENSE` for details.
 
 ```bash
 # Clone dự án
-git clone https://github.com/your-org/game-dev-studio.git
+git clone https://github.com/toilanguyen2910/game-dev-studio.git
 cd game-dev-studio
 
 # Cài đặt platform tương ứng (ví dụ: OpenClaw)
@@ -299,4 +299,4 @@ openclaw skills install ./studio-config/openclaw/
 
 ---
 
-*Built with ❤️ for game developers, by game developers.*
+*Built by [Jack Nguyen](https://github.com/toilanguyen2910) — for game developers, by game developers.*
