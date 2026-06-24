@@ -11,7 +11,7 @@ Currently, the following versions of Game Dev Studio are supported with security
 
 ## Reporting a Vulnerability
 
-We take the security of this project seriously. If you find any security vulnerabilities, please do not report them via public issues. Instead, report them by emailing [toilanguyen2910@gmail.com].
+We take the security of this project seriously. If you find any security vulnerabilities, please do not report them via public issues. Instead, report them by emailing [jack.vhknguyen@gmail.com].
 
 Please include details about:
 * The nature of the vulnerability

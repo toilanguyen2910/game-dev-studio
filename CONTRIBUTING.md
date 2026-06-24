@@ -39,4 +39,4 @@ See the [README.md](README.md) and [docs/multi-platform.md](docs/multi-platform.
 
 ## Questions?
 
-Feel free to open an issue or reach out via [toilanguyen2910@gmail.com].
+Feel free to open an issue or reach out via [jack.vhknguyen@gmail.com].
