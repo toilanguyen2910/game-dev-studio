@@ -258,11 +258,11 @@ MIT — see `LICENSE` for details.
 
 ---
 
-## Community
+## Contact Me
 
-- **Discord**: [discord.gg/gamedevstudio](https://discord.gg/gamedevstudio)
-- **Twitter/X**: [@GameDevStudio](https://twitter.com/gamedevstudio)
-- **Issues**: [GitHub Issues](https://github.com/toilanguyen2910/game-dev-studio/issues)
+- **Gmail**: [jack.vhknguyen@gmail.com](mailto:jack.vhknguyen@gmail.com)
+- **Facebook**: [Jack Nguyen](https://www.facebook.com/sourrrkngyn7/)
+- **Instagram**: [Jack Nguyen](https://www.instagram.com/sourrrr_kngyn/)
 
 ---
 
