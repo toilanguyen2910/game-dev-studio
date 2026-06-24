@@ -299,4 +299,4 @@ openclaw skills install ./studio-config/openclaw/
 
 ---
 
-*Built by [Jack Nguyen](https://github.com/toilanguyen2910) — for game developers, by game developers.*
+*Built by [Jack Nguyen](https://github.com/toilanguyen2910)*
