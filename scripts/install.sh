@@ -66,63 +66,63 @@ detect_agents() {
     # OpenClaw
     if command -v openclaw &>/dev/null; then
         agents+=("openclaw")
-        echo -e "  ${GREEN}✓${NC} OpenClaw CLI detected"
+        echo -e "  ${GREEN}✓${NC} OpenClaw CLI detected" >&2
     else
-        echo -e "  ${YELLOW}○${NC} OpenClaw not found"
+        echo -e "  ${YELLOW}○${NC} OpenClaw not found" >&2
     fi
 
     # Claude Code
     if command -v claude &>/dev/null; then
         agents+=("claude")
-        echo -e "  ${GREEN}✓${NC} Claude Code detected"
+        echo -e "  ${GREEN}✓${NC} Claude Code detected" >&2
     elif [[ -d "$HOME/.claude" ]]; then
         agents+=("claude")
-        echo -e "  ${GREEN}✓${NC} Claude config directory found"
+        echo -e "  ${GREEN}✓${NC} Claude config directory found" >&2
     else
-        echo -e "  ${YELLOW}○${NC} Claude Code not found"
+        echo -e "  ${YELLOW}○${NC} Claude Code not found" >&2
     fi
 
     # Codex CLI
     if command -v codex &>/dev/null || [[ -d "$HOME/.codex" ]]; then
         agents+=("codex")
-        echo -e "  ${GREEN}✓${NC} Codex CLI detected"
+        echo -e "  ${GREEN}✓${NC} Codex CLI detected" >&2
     else
-        echo -e "  ${YELLOW}○${NC} Codex CLI not found"
+        echo -e "  ${YELLOW}○${NC} Codex CLI not found" >&2
     fi
 
     # Gemini CLI
     if command -v gemini &>/dev/null || [[ -d "$HOME/.gemini" ]]; then
         agents+=("gemini")
-        echo -e "  ${GREEN}✓${NC} Gemini CLI detected"
+        echo -e "  ${GREEN}✓${NC} Gemini CLI detected" >&2
     else
-        echo -e "  ${YELLOW}○${NC} Gemini CLI not found"
+        echo -e "  ${YELLOW}○${NC} Gemini CLI not found" >&2
     fi
 
     # Cursor
     if command -v cursor &>/dev/null || [[ -d "$HOME/.cursor" ]]; then
         agents+=("cursor")
-        echo -e "  ${GREEN}✓${NC} Cursor detected"
+        echo -e "  ${GREEN}✓${NC} Cursor detected" >&2
     else
-        echo -e "  ${YELLOW}○${NC} Cursor not found"
+        echo -e "  ${YELLOW}○${NC} Cursor not found" >&2
     fi
 
     # Windsurf
     if command -v windsurf &>/dev/null || [[ -d "$HOME/.windsurf" ]]; then
         agents+=("windsurf")
-        echo -e "  ${GREEN}✓${NC} Windsurf detected"
+        echo -e "  ${GREEN}✓${NC} Windsurf detected" >&2
     else
-        echo -e "  ${YELLOW}○${NC} Windsurf not found"
+        echo -e "  ${YELLOW}○${NC} Windsurf not found" >&2
     fi
 
     # OpenCode
     if command -v opencode &>/dev/null || [[ -d "$HOME/.opencode" ]]; then
         agents+=("opencode")
-        echo -e "  ${GREEN}✓${NC} OpenCode detected"
+        echo -e "  ${GREEN}✓${NC} OpenCode detected" >&2
     else
-        echo -e "  ${YELLOW}○${NC} OpenCode not found"
+        echo -e "  ${YELLOW}○${NC} OpenCode not found" >&2
     fi
 
-    echo ""
+    echo "" >&2
     echo "${agents[@]}"
 }
 
