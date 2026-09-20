@@ -4,6 +4,14 @@ All notable changes to Game Dev Studio will be documented here.
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+- Corrected documentation counts to match the files currently shipped.
+- Added repository-wide `AGENTS.md` and GitHub Copilot instructions.
+- Clarified that undocumented platform adapters are experimental.
+
 ## [1.1.0] - 2026-06-25
 
 ### Added

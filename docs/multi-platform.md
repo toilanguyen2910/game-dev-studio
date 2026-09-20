@@ -6,7 +6,7 @@
 
 ## Overview
 
-Game Dev Studio is built to work seamlessly across **13+ AI coding agent platforms**. Each platform has its own configuration directory under `studio-config/`, and the same skill, agent, and template libraries are shared across all of them.
+Game Dev Studio currently documents **5 AI coding agent platforms**. Other platforms may work through the conversion scripts, but are experimental until documented and tested.
 
 This guide covers installation and usage for the **5 primary platforms**. Community contributions extend support to additional platforms.
 
@@ -42,7 +42,7 @@ openclaw skills install ./studio-config/openclaw/
 # Verify installation
 openclaw skills list
 
-# Expected output should include 73+ skills
+# Expected output should include the 10 skills shipped in this repository
 ```
 
 ### Configuration

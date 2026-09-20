@@ -1,7 +1,7 @@
 # 🎮 Game Dev Studio
 
 > **Multi-Platform AI-Powered Game Development Ecosystem**
-> *49+ Agents · 73+ Skills · 41 Templates · 13+ Coding Platforms*
+> *10 Agents · 10 Skills · 7 Templates · 5 Documented Platforms*
 
 ---
 
@@ -15,11 +15,11 @@
 
 Whether you are a solo indie developer or a full studio team, Game Dev Studio gives you:
 
-- **49+ Specialized Agents** — From concept artists to QA engineers, each agent has a defined role, expertise, and tools.
-- **73+ Reusable Skills** — Pre-built capabilities covering game design, programming, art, audio, marketing, and operations.
-- **41 Production Templates** — Game Design Documents (GDD), Architecture Decision Records (ADR), UX specs, and more.
+- **10 Specialized Agents** — From creative direction and design to production and QA.
+- **10 Reusable Skills** — Covering game design, programming, art, prototyping, QA, and release.
+- **7 Production Templates** — Game Design Documents (GDD), Architecture Decision Records (ADR), and UX specs.
 - **7-Phase Pipeline** — A battle-tested development workflow from concept to release.
-- **Multi-Platform Support** — Works with OpenClaw, Claude Code, Codex CLI, Gemini CLI, Cursor, and more.
+- **Multi-Platform Support** — Documented for OpenClaw, Claude Code, Codex CLI, Gemini CLI, and Cursor.
 
 ---
 
@@ -271,9 +271,9 @@ MIT — see `LICENSE` for details.
 
 ### Tính năng chính
 
-- **49+ Tác nhân chuyên biệt** — Từ nghệ sĩ ý tưởng đến kỹ sư kiểm thử
-- **73+ Kỹ năng tái sử dụng** — Thiết kế game, lập trình, nghệ thuật, âm thanh, tiếp thị
-- **41 Mẫu sản xuất** — Tài liệu thiết kế game (GDD), quyết định kiến trúc (ADR), thông số UX
+- **10 Tác nhân chuyên biệt** — Từ định hướng sáng tạo đến lập trình và kiểm thử
+- **10 Kỹ năng tái sử dụng** — Thiết kế game, lập trình, nghệ thuật, prototype, QA và phát hành
+- **7 Mẫu sản xuất** — Tài liệu thiết kế game (GDD), quyết định kiến trúc (ADR), thông số UX
 - **Quy trình 7 giai đoạn** — Từ ý tưởng đến phát hành
 - **Đa nền tảng** — Hoạt động với OpenClaw, Claude Code, Codex CLI, Gemini CLI, Cursor
 
