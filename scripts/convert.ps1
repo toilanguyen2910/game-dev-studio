@@ -210,7 +210,9 @@ function Print-Summary {
 # ── Main ─────────────────────────────────────────────────────────────────────
 Write-Host "╔══════════════════════════════════════════════════════╗" -ForegroundColor Cyan
 Write-Host "║  Game Dev Studio - Skill Converter                   ║" -ForegroundColor Cyan
-Write-Host "║  Platform: $((Get-CimInstance Win32_OperatingSystem).Caption 2>$null ?? 'Unknown')   " -ForegroundColor Cyan
+$osCaption = (Get-CimInstance Win32_OperatingSystem -ErrorAction SilentlyContinue).Caption
+if ([string]::IsNullOrWhiteSpace($osCaption)) { $osCaption = 'Unknown' }
+Write-Host "║  Platform: $osCaption   " -ForegroundColor Cyan
 Write-Host "║  Target:   $Tool                                       " -ForegroundColor Cyan
 Write-Host "╚══════════════════════════════════════════════════════╝" -ForegroundColor Cyan
 
