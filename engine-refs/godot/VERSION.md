@@ -1,7 +1,7 @@
-# Godot Engine 4.6 Reference
+# Godot Engine 4.7 Reference
 
 > **Released**: January 26, 2026
-> **Status**: Stable
+> **Status**: Stable reference target; verify patch version before production
 > **Previous**: Godot 4.5 (September 15, 2025)
 > **Official docs**: https://docs.godotengine.org/en/4.6/
 > **Release notes**: https://godotengine.org/releases/4.6/

@@ -15,6 +15,9 @@ All notable changes to Game Dev Studio will be documented here.
 - Added GitHub Actions checks for repository structure and script syntax.
 - Fixed a Bash syntax error in the Codex conversion path.
 - Fixed PowerShell compatibility in the converter platform banner.
+- Updated engine reference targets to Godot 4.7 and Unity 6.3 LTS.
+- Added Godot and Unity prototype workflow examples and MCP guidance.
+- Added an attribution section awaiting the original project URL.
 
 ## [1.1.0] - 2026-06-25
 

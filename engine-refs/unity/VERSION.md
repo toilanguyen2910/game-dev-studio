@@ -1,7 +1,7 @@
-# Unity 7 Reference
+# Unity 6.3 LTS Reference
 
-> **Status**: Latest major release (following Unity 6.x series)
-> **Previous**: Unity 6.7 LTS (2026)
+> **Status**: Long-term support release
+> **Support**: Through December 2027
 > **Official docs**: https://docs.unity.com
 > **Version scheme**: Unity 7 represents the major cycle after Unity 6.
 

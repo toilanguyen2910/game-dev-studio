@@ -43,7 +43,7 @@ Detailed setup instructions → [docs/multi-platform.md](docs/multi-platform.md)
 
 - Git
 - One (or more) supported AI coding agent platforms
-- A game engine of your choice (Godot 4.6+, Unity 7+, or UE 5.6+)
+- A game engine of your choice (Godot 4.7+, Unity 6.3 LTS, or UE 5.6+)
 
 ### Installation
 
@@ -130,8 +130,8 @@ game-dev-studio/
 
 | Engine | Version | Focus Areas |
 |---|---|---|
-| **Godot** | 4.6 | GDScript, C#, Vulkan/Metal, 2D/3D, XR |
-| **Unity** | 7 | DOTS, ECS, MegaCity, Sentis AI, WebGPU |
+| **Godot** | 4.7 | GDScript, C#, Vulkan/Metal, 2D/3D, XR |
+| **Unity** | 6.3 LTS | C#, UI Toolkit, DOTS, cross-platform builds |
 | **Unreal Engine** | 5.6 | Nanite, Lumen, MetaHuman, PCG, Verse |
 
 Each engine folder contains best-practice reference implementations, code snippets, and performance optimization guides. See `engine-refs/<engine>/README.md` for details.
@@ -254,6 +254,12 @@ We welcome contributions from game developers, AI engineers, designers, and writ
 ## License
 
 MIT — see `LICENSE` for details.
+
+## Attribution
+
+This repository is a maintained derivative of an earlier game-development
+toolkit. Add the original project URL and license details here before
+redistribution; do not claim the upstream work as original.
 
 ---
 
