@@ -255,11 +255,6 @@ We welcome contributions from game developers, AI engineers, designers, and writ
 
 MIT — see `LICENSE` for details.
 
-## Attribution
-
-This repository is a maintained derivative of an earlier game-development
-toolkit. Add the original project URL and license details here before
-redistribution; do not claim the upstream work as original.
 
 ---
 
