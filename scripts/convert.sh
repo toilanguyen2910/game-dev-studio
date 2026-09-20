@@ -124,7 +124,7 @@ convert_codex() {
         echo "Converted from game-dev-studio." >> "$dest/SKILL.md"
     fi
     # Copy support files
-    for f in "$src"/*.md "$src"/*.json "$src"/*.yaml "$src"/*.yml 2>/dev/null; do
+    for f in "$src"/*.md "$src"/*.json "$src"/*.yaml "$src"/*.yml; do
         [[ -f "$f" ]] && run_cmd cp "$f" "$dest/"
     done
     CONVERTED["codex:$name"]="$dest"

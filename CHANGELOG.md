@@ -13,6 +13,7 @@ All notable changes to Game Dev Studio will be documented here.
 - Clarified that undocumented platform adapters are experimental.
 - Fixed Bash installer agent detection so status messages do not get parsed as agent names.
 - Added GitHub Actions checks for repository structure and script syntax.
+- Fixed a Bash syntax error in the Codex conversion path.
 
 ## [1.1.0] - 2026-06-25
 
