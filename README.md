@@ -3,6 +3,19 @@
 > **Multi-Platform AI-Powered Game Development Ecosystem**
 > *10 Agents · 10 Skills · 7 Templates · 5 Documented Platforms*
 
+![Screenshot of the included Godot prototype](examples/godot/screenshot.png)
+
+**Try it in two minutes:** clone this repository, open
+`examples/godot/project/project.godot` in Godot 4.7.2, and press Play. Move the
+blue square with the arrow keys. Then ask your coding agent:
+
+> Read `skills/prototype/SKILL.md` and add a win condition when the square
+> touches the green target. Run the project and explain how you checked it.
+
+The [Godot example guide](examples/godot/README.md) includes a headless check.
+The agent roles, skills, and templates in this repository are reusable starting
+points for your own game project.
+
 ---
 
 **English** | [Tiếng Việt](#tiếng-việt)
@@ -11,7 +24,9 @@
 
 ## Overview
 
-**Game Dev Studio** is a comprehensive, multi-platform game development environment powered by AI coding agents. It provides a structured pipeline for building games across any engine (Godot, Unity, Unreal) using best-in-class AI tools — all managed through a unified skill, agent, and template library.
+**Game Dev Studio** is a collection of agent roles, skills, templates, and a
+seven-phase workflow for building games with AI coding agents. It includes a
+small Godot project you can run immediately and guidance for Unity and Unreal.
 
 Whether you are a solo indie developer or a full studio team, Game Dev Studio gives you:
 

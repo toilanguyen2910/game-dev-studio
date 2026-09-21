@@ -4,6 +4,8 @@ This is a small project you can open in Godot 4.7. It starts a playable 2D
 scene: use the arrow keys to move the square. The files live under
 `examples/godot/project/`.
 
+![Godot prototype screenshot](screenshot.png)
+
 From this repository's root, run:
 
 ```sh

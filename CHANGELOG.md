@@ -13,6 +13,8 @@ All notable changes to Game Dev Studio will be documented here.
 - Added a playable Godot prototype and corrected README setup commands.
 - Replaced unverified OpenClaw pipeline commands with the repository's actual
   installer and workflow instructions.
+- Added a screenshot captured from the Godot example and a two-minute
+  first-run path in the README.
 
 - Corrected documentation counts to match the files currently shipped.
 - Added repository-wide `AGENTS.md` and GitHub Copilot instructions.

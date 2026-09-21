@@ -5,6 +5,12 @@ config_version=5
 config/name="Game Dev Studio Prototype"
 run/main_scene="res://main.tscn"
 
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.055, 0.075, 0.12, 1)
