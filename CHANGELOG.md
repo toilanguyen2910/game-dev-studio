@@ -4,7 +4,7 @@ All notable changes to Game Dev Studio will be documented here.
 
 ---
 
-## [Unreleased]
+## [1.2.0] - 2026-09-21
 
 ### Changed
 
@@ -15,7 +15,6 @@ All notable changes to Game Dev Studio will be documented here.
   installer and workflow instructions.
 - Added a screenshot captured from the Godot example and a two-minute
   first-run path in the README.
-
 - Corrected documentation counts to match the files currently shipped.
 - Added repository-wide `AGENTS.md` and GitHub Copilot instructions.
 - Clarified that undocumented platform adapters are experimental.
