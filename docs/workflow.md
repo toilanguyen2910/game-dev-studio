@@ -358,32 +358,27 @@ Concept → Design → Architecture → Pre-Production → Production → QA/Tes
 
 ---
 
-## Running the Pipeline
+## Using the Pipeline
 
 ### Full Run
 
-```bash
-openclaw agent run --pipeline full --project ./my-game
-```
+Read the phase goals in this document, then ask your coding agent to work
+through one phase at a time. Review each deliverable before starting the next.
 
 ### Single Phase
 
-```bash
-openclaw agent run --pipeline design --project ./my-game
-```
+For the design phase, ask the agent to read `skills/game-design-doc/SKILL.md`
+and fill a copy of `templates/gdd/game-design-document.md` in your project.
 
 ### Phase with Specific Focus
 
-```bash
-openclaw agent run --pipeline production --project ./my-game --focus audio
-```
+For an audio task, give the agent the game project, desired sound behavior,
+and acceptance criteria. Review the output in the target engine.
 
 ### Custom Skip
 
-```bash
-# Skip pre-production if already validated
-openclaw agent run --pipeline full --project ./my-game --skip pre-production
-```
+If pre-production work is already validated, record the evidence and continue
+with the next phase. This document is a process guide, not an executable CLI.
 
 ---
 

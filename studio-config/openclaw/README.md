@@ -8,11 +8,8 @@ Game Dev Studio skills for OpenClaw.
 bash scripts/install.sh
 ```
 
-Or manually:
-
-```bash
-openclaw skills install ./studio-config/openclaw/
-```
+Review `scripts/install.sh` before running it; the installer copies skill
+folders into the OpenClaw workspace when you select that platform.
 
 ## Skills Location
 
@@ -20,13 +17,5 @@ Skills are installed to `~/.openclaw/workspace/skills/`.
 
 ## Usage
 
-```bash
-# List installed skills
-openclaw skills list
-
-# Start a new game project
-openclaw agent run --pipeline init
-
-# Run a specific phase
-openclaw agent run --pipeline qa --project ./my-game
-```
+Ask your OpenClaw agent to read a skill from `skills/` and the corresponding
+game project. Follow `docs/workflow.md` for phase goals and deliverables.

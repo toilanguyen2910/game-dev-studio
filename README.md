@@ -27,7 +27,7 @@ Whether you are a solo indie developer or a full studio team, Game Dev Studio gi
 
 | Platform | Install Method | Config Path |
 |---|---|---|
-| **OpenClaw** | `openclaw skills install` | `studio-config/openclaw/` |
+| **OpenClaw** | `bash scripts/install.sh` | `studio-config/openclaw/` |
 | **Claude Code** | `.claude/skills/` | `studio-config/claude-code/` |
 | **Codex CLI** | `.codex/` | `studio-config/codex/` |
 | **Gemini CLI** | `.gemini/skills/` | `studio-config/gemini/` |
@@ -265,8 +265,9 @@ MIT — see `LICENSE` for details.
 git clone https://github.com/toilanguyen2910/game-dev-studio.git
 cd game-dev-studio
 
-# Cài đặt platform tương ứng (ví dụ: OpenClaw)
-openclaw skills install ./studio-config/openclaw/
+# Xem tùy chọn rồi cài skill cho nền tảng bạn chọn
+bash scripts/install.sh --help
+bash scripts/install.sh
 ```
 
 ### Liên kết hữu ích

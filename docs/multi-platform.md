@@ -28,7 +28,8 @@ This guide covers installation and usage for the **5 primary platforms**. Commun
 
 ### Overview
 
-OpenClaw is the **primary platform** for Game Dev Studio. It provides native support for skills, agents, pipelines, and templates.
+OpenClaw can load the skills in this repository. The seven-phase pipeline is a
+documented workflow; this repository does not install an OpenClaw pipeline CLI.
 
 ### Installation
 
@@ -36,49 +37,29 @@ OpenClaw is the **primary platform** for Game Dev Studio. It provides native sup
 # Navigate to project root
 cd game-dev-studio
 
-# Install all Game Dev Studio skills
-openclaw skills install ./studio-config/openclaw/
-
-# Verify installation
-openclaw skills list
-
-# Expected output should include the 10 skills shipped in this repository
+# Review installer options, then run it interactively
+bash scripts/install.sh --help
+bash scripts/install.sh
 ```
 
 ### Configuration
 
-OpenClaw auto-loads configuration from the installed skills directory. No additional setup is required.
+The installer copies the ten `SKILL.md` folders into the OpenClaw workspace
+skills directory when OpenClaw is selected. Check that destination in the
+installer before running it.
 
 ### Usage
 
-```bash
-# List all agents
-openclaw agent list
-
-# Run a specific agent
-openclaw agent run --agent game-designer --task "Design core combat loop"
-
-# Execute the full pipeline
-openclaw agent run --pipeline full --project ./my-game
-
-# Run a specific phase
-openclaw agent run --pipeline production --project ./my-game
-
-# Use collaboration protocol
-openclaw collaboration start --mode lean --project ./my-game
-```
+Ask your OpenClaw agent to read a skill such as `skills/prototype/SKILL.md`
+and the relevant game project. Use `docs/workflow.md` to track phase outputs.
 
 ### Commands Reference
 
 | Command | Description |
 |---|---|
-| `openclaw skills install <path>` | Install skills from path |
-| `openclaw skills list` | List installed skills |
-| `openclaw agent list` | List available agents |
-| `openclaw agent run <args>` | Run an agent with arguments |
-| `openclaw collaboration start` | Start collaboration session |
-| `openclaw pipeline run` | Execute pipeline phase |
-| `openclaw template scaffold` | Generate from template |
+| `bash scripts/install.sh` | Copy repository skills to selected agent configuration |
+| `bash scripts/validate.sh` | Check repository structure |
+| `bash scripts/list-agents.sh` | List included agent definitions |
 
 ---
 
@@ -363,8 +344,8 @@ studio-config/
 You can use **multiple platforms** on the same project. Each platform reads from its own config directory:
 
 ```bash
-# Use OpenClaw for pipeline orchestration
-openclaw agent run --pipeline design --project ./my-game
+# Use the workflow guide to plan a design phase
+# See docs/workflow.md
 
 # Use Claude Code for a specific code task
 cd ./my-game
@@ -386,8 +367,8 @@ All platforms share the same:
 
 ### OpenClaw
 - Requires `openclaw` CLI installed globally
-- Supports the full 7-phase pipeline natively
-- Best for end-to-end project management
+- Can use the repository's skills after installation
+- Follow the documented seven-phase workflow manually
 
 ### Claude Code
 - Requires Anthropic API key or Claude Pro subscription
