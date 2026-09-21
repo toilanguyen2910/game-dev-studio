@@ -1,4 +1,4 @@
-# GDScript 2.0 Reference (Godot 4.6)
+# GDScript reference (Godot 4.7)
 
 > **Documentation**: https://docs.godotengine.org/en/4.6/tutorials/scripting/gdscript/
 > **Version**: GDScript 2.0 (Godot 4.x series)

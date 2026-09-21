@@ -8,6 +8,10 @@ All notable changes to Game Dev Studio will be documented here.
 
 ### Changed
 
+- Replaced inconsistent engine version notes with concise, sourced targets:
+  Godot 4.7.2, Unity 6.3 LTS, and Unreal Engine 5.8.
+- Added a playable Godot prototype and corrected README setup commands.
+
 - Corrected documentation counts to match the files currently shipped.
 - Added repository-wide `AGENTS.md` and GitHub Copilot instructions.
 - Clarified that undocumented platform adapters are experimental.

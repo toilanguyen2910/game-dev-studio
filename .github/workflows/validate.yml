@@ -27,3 +27,10 @@ jobs:
             if ($errors) { $errors | ForEach-Object { Write-Error $_.Message } }
           }
           if ($errors) { exit 1 }
+      - name: Run Godot prototype headlessly
+        run: |
+          curl -fsSL --retry 3 -o godot.zip \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q godot.zip -d godot-bin
+          chmod +x godot-bin/Godot_v4.7.2-stable_linux.x86_64
+          godot-bin/Godot_v4.7.2-stable_linux.x86_64 --headless --path examples/godot/project --quit-after 2

@@ -43,7 +43,7 @@ Detailed setup instructions → [docs/multi-platform.md](docs/multi-platform.md)
 
 - Git
 - One (or more) supported AI coding agent platforms
-- A game engine of your choice (Godot 4.7+, Unity 6.3 LTS, or UE 5.6+)
+- A game engine for the examples you intend to run (Godot 4.7.2, Unity 6.3 LTS, or Unreal Engine 5.8)
 
 ### Installation
 
@@ -52,34 +52,24 @@ Detailed setup instructions → [docs/multi-platform.md](docs/multi-platform.md)
 git clone https://github.com/toilanguyen2910/game-dev-studio.git
 cd game-dev-studio
 
-# Install platform-specific configs (choose your platform)
-# OpenClaw
-openclaw skills install
+# Inspect installer choices before installing to any agent configuration
+bash scripts/install.sh --help
 
-# Claude Code
-mkdir -p .claude/skills/ && cp -r skills/* .claude/skills/
-
-# Codex CLI
-mkdir -p .codex/skills/ && cp -r skills/* .codex/skills/
-
-# Gemini CLI
-mkdir -p .gemini/skills/ && cp -r skills/* .gemini/skills/
-
-# Cursor
-mkdir -p .cursor/rules/ && cp -r skills/* .cursor/rules/
+# Or use PowerShell on Windows
+pwsh -File scripts/install.ps1 -Help
 ```
 
 ### First Run
 
 ```bash
-# Verify installation
-openclaw skills list
+# Check repository structure
+bash scripts/validate.sh
 
-# List all available agents
-./scripts/list-agents.sh
+# List included agent definitions
+bash scripts/list-agents.sh
 
-# Run the collaboration protocol
-openclaw agent start --pipeline init
+# Load the included Godot example (requires Godot 4.7)
+godot --headless --path examples/godot/project --quit-after 2
 ```
 
 ---
@@ -112,9 +102,9 @@ game-dev-studio/
 │   ├── adr/                     # Architecture Decision Records
 │   └── ux/                      # UX / UI specifications
 ├── engine-refs/                 # Engine-specific references
-│   ├── godot/                   # Godot 4.6 references
-│   ├── unity/                   # Unity 7 references
-│   └── unreal/                  # Unreal Engine 5.6 references
+│   ├── godot/                   # Godot 4.7 references
+│   ├── unity/                   # Unity 6.3 LTS reference
+│   └── unreal/                  # Unreal Engine 5.8 reference
 ├── scripts/                     # Automation & utility scripts
 └── studio-config/               # Per-platform configuration
     ├── openclaw/
@@ -130,11 +120,13 @@ game-dev-studio/
 
 | Engine | Version | Focus Areas |
 |---|---|---|
-| **Godot** | 4.7 | GDScript, C#, Vulkan/Metal, 2D/3D, XR |
+| **Godot** | 4.7.2 | GDScript and the bundled 2D prototype |
 | **Unity** | 6.3 LTS | C#, UI Toolkit, DOTS, cross-platform builds |
-| **Unreal Engine** | 5.6 | Nanite, Lumen, MetaHuman, PCG, Verse |
+| **Unreal Engine** | 5.8 | Version reference and links to Epic documentation |
 
-Each engine folder contains best-practice reference implementations, code snippets, and performance optimization guides. See `engine-refs/<engine>/README.md` for details.
+The version notes under `engine-refs/` link to official documentation. The
+Godot example under `examples/godot/` is a small playable project. The Unity
+example is currently a workflow guide, not a bundled Unity project.
 
 ---
 
@@ -179,41 +171,29 @@ See [docs/collaboration.md](docs/collaboration.md) for the complete protocol.
 
 ### Start a New Game Project
 
-```bash
-# Initialize a new project
-openclaw agent run --init-project "My Game" --engine godot --pipeline concept
-
-# This triggers the Concept phase: market analysis → genre selection → vision doc → pitch deck
-```
+Open the [Godot prototype](examples/godot/README.md) or start a game project in
+your chosen engine. Ask your coding agent to read `skills/start/SKILL.md` and
+help define the concept and the next deliverable.
 
 ### Run the Full Pipeline
 
-```bash
-# Walk through all 7 phases
-openclaw agent run --pipeline full --project ./my-game
-```
+Use [docs/workflow.md](docs/workflow.md) as a checklist. Each phase produces a
+document or game artifact that you review before moving on.
 
 ### Run a Single Phase
 
-```bash
-# Just the QA phase
-openclaw agent run --pipeline qa --project ./my-game --focus regression
-```
+Ask your coding agent to read `skills/qa-test/SKILL.md`, inspect your game
+project, run the available tests, and write down reproducible findings.
 
 ### Use a Template
 
-```bash
-# Scaffold a Game Design Document
-cp -r templates/gdd ./my-game/docs/
-openclaw agent run --fill-template ./my-game/docs/gdd.md
-```
+Copy `templates/gdd/game-design-document.md` into your game project and fill
+it with your agent. The template is a Markdown file, not a CLI command.
 
 ### Generate a Report
 
-```bash
-# Status report for production build
-openclaw agent run --report-status --phase production
-```
+Ask your agent to summarize completed work, open risks, validation results,
+and the next milestone using the project's real source and build logs.
 
 ---
 
